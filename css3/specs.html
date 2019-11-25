@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Glass</title>
+        <!-- codigo rgb em hexa: xxR yyG zzB (+antigo)-->
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <script src="_javascript/funcoes.js"></script>
+    </head>    
+    <body>
+        <div id="site">
+            <header id="cabecalho">    
+            <hgroup>
+            <h1 class="sitename">Google Glass</h1>
+            <h2 class="sitename">A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" alt="oculos" title="oculos" src="_imagens/icones/especificacoes.png"><br>
+            <nav id="menu" onmouseout="mudaFoto('_imagens/icones/especificacoes.png')">
+                <h1>Menu Principal</h1>
+                <ul>
+                <a href="index.html" onmouseover="mudaFoto('_imagens/icones/glass-oculos-preto-peq.png')"><li>Home</li></a>
+                <a href="specs.html" onmouseover="mudaFoto('_imagens/icones/especificacoes.png')"><li>Especificações</li></a>
+                <a href="fotos.html" onmouseover="mudaFoto('_imagens/icones/fotos.png')"><li>Fotos</li></a>
+                <a href="multimidia.html" onmouseover="mudaFoto('_imagens/icones/multimidia.png')"><li>Multimídia</li></a>
+                <a href="fale-conosco.html" onmouseover="mudaFoto('_imagens/icones/contato.png')"><li>Fale Conosco</li></a>
+                </ul>
+            </nav>
+            </header>
+            
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="corpo">    
+<article id="specificacoes">    
+<div id="breadcrum">Glass &nbsp;&nbsp; > &nbsp;&nbsp;Especificações</div>
+    
+<h2>Raio-X no Google Glass</h2>
+
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+<img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+<map name="meumapa">
+    <area alt="tela" title="tela" shape="poly" coords="267,206,266,244,185,256,182,218" href="google-glass.html#tela" target="janela"/>
+    <area alt="camera" title="camera"  shape="circle" coords="158,243,12" href="google-glass.html#camera" target="janela"/>
+    <area alt="sensores" title="sensores"  shape="poly" coords="28,143,83,216,84,249,27,169" href="google-glass.html#sensores" target="janela"/>
+    <area alt="bateria" title="bateria"  shape="circle" coords="76,52,12" href="google-glass.html#bateria" target="janela"/>
+</map>
+</article>
+</section>
+
+<aside id="lateral">
+        
+        <iframe scrolling='no' src="google-glass.html" name="janela"></iframe>
+    
+</aside>
+
+<!-- ----------------------------------------------------------------------- -->
+            
+<footer id="rodape"><h3>Copyright &copy; 2017 - by Everton M.</h3></footer>        
+</div></body>
+</html>

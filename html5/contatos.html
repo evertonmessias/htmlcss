@@ -1,0 +1,245 @@
+<!Doctype html>
+<html lang="pt-br">
+<head>
+<title>Teste 3</title>
+<meta charset="utf-8">
+<link rel="icon" href="./figuras/ico.png" />
+<link rel="stylesheet" href="./estilos/estilos.css" />
+
+<script type="text/javascript" >
+function calcular() {
+var qtd = parseInt(document.getElementById('cQtd').value);
+var tot = qtd * 1500;
+document.getElementById('cTot').value = tot;}
+</script>
+
+</head>
+<body>
+<div id="pagina">
+<header>
+
+<figure>
+<img src="./figuras/logo.png" alt="Logo" title="Logo">
+<figcaption></figcaption>
+</figure>
+
+<nav>
+
+<ul class="menu">
+
+<li><a href="./index.html">Home</a></li>
+
+<li><a href="#">Mídia</a>
+
+		<ul>
+				<li><a href="./fotos.html">Fotos</a></li>
+				<li><a href="./multim.html">Video</a></li>
+		</ul>	
+
+</li>
+
+<li><a href="./contatos.html">Contatos</a></li>
+
+</ul>
+
+</nav>
+
+
+</header>
+
+<section id="form">       
+
+<aside>
+
+<iframe scrolling='no' src="janela.html" name="janela"></iframe>
+
+
+</aside>
+
+<article>
+<br>
+<h1>FORMULARIO DE CONTATO</h1>
+
+<hr class="divisor">
+
+
+<form method="post" id="form" oninput="calcular();" action="mailto:everton.messias@gmail.com">
+
+<!-- ***************************USER****************************** -->
+
+<fieldset id="usuario"><legend>Identificação do Usuário</legend><br>
+<input type="hidden" name="tCodigo" id="cCodigo" value="abc012xyz789">
+<label><span class="legenda">*Nome:</span><input type="text" name="tNome" id="cNome" size="30" maxlength="30" placeholder=" Nome Completo" autofocus required></label><br>
+<label><span class="legenda">*Senha:</span><input  type="password" name="tSenha" id="cSenha" size="11" maxlength="8" placeholder=" 8 digitos" /></label><br>
+<label><span class="legenda">*E-mail:</span><input  type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder=" email@email.com" /></label><br>
+<label><span class="legenda">*CPF:</span><input  type="text" name="tCPF" id="cCPF" size="11" maxlength="14" placeholder=" xxx.xxx.xxx-xx" /></label><br>
+<label><span class="legenda">Celular:</span><input  type="tel" name="tTel" id="cTel" size="11" placeholder=" (xx) xxxxx-xxxx"  /></label><br>
+<label><span class="legenda">Nasc:</span><input type="date" name="tData" id="cData"/></label><br>
+</fieldset>
+
+<fieldset id="sexo"><legend>Sexo</legend><br>
+<label><span class="legenda">Masc:</span><input type="radio" name="tSexo" id="cSexoM" value="M" checked /></label><br>
+<label><span class="legenda">Femin:</span><input type="radio" name="tSexo" id="cSexoF" value="F" /></label>
+</fieldset>
+
+<fieldset id="social"><legend>Social</legend>
+<label><span class="legenda">Foto:</span><input type="file" id="cAnexo" name="tAnexo"/></label><br><br>
+<label><span class="legenda">Site:</span><input type="url" name="tURL" id="cURL" placeholder=" seu site ou rede social" /></label>
+</fieldset>
+
+
+<!-- *************************Endereço******************************* -->
+
+<fieldset id="endereco"><legend>Endereço do Usuário</legend><br>
+
+<label><span class="legenda">Rua:</span><input type="text" name="tEnd" id="cEnd" size="34" maxlength="80" placeholder=" Rua Brasil,"/> </label>
+<label><span class="legenda">No / Complem:</span><input type="number" name="tNum" id="cNum" min="0" max="99999"/>&emsp;
+<input type="text" name="tComp" id="cComp" size="34" maxlength="80" placeholder=" complemento"/> </label><br>
+
+<label><span class="legenda">Cidade: </span><input type="text" name="tCid" id="cCid" size="15" maxlength="40" placeholder="Cidade" list="capitais"/>
+<datalist id="capitais">
+<option value="Rio Branco (Acre)"></option>
+<option value="Maceió (Alagoas)"></option>
+<option value="Macapá (Amapá)"></option>
+<option value="Manaus (Amazonas)"></option>
+<option value="Salvador (Bahia)"></option>
+<option value="Fortaleza (Ceará)"></option>
+<option value="Brasília (Distrito Federal)"></option>
+<option value="Vitória (Espírito Santo)"></option>
+<option value="Goiânia (Goiás)"></option>
+<option value="São Luís (Maranhão)"></option>
+<option value="Cuiabá (Mato Grosso)"></option>
+<option value="Campo Grande (Mato Grosso do Sul)"></option>
+<option value="Belo Horizonte (Minas Gerais)"></option>
+<option value="Belém (Pará)"></option>
+<option value="João Pessoa (Paraíba)"></option>
+<option value="Curitiba (Paraná)"></option>
+<option value="Recife (Pernambuco)"></option>
+<option value="Teresina (Piauí)"></option>
+<option value="Rio de Janeiro (Rio de Janeiro)"></option>
+<option value="Natal (Rio Grande do Norte)"></option>
+<option value="Porto Alegre (Rio Grande do Sul)"></option>
+<option value="Porto Velho (Rondônia)"></option>
+<option value="Boa Vista (Roraima)"></option>
+<option value="Florianópolis (Santa Catarina)"></option>
+<option value="São Paulo (São Paulo)"></option>
+<option value="Aracaju (Sergipe)"></option>
+<option value="Palmas (Tocantins)"></option>
+</datalist></label>
+
+<label><span class="legenda">Estado: </span>
+<select name="tEst" id="cEst">
+<optgroup label="Região Norte">
+<option value="AM">Amazonas - AM</option>
+<option value="RR">Roraima - RR</option>
+<option value="AP">Amapá - AP</option>
+<option value="PA">Pará - PA</option>
+<option value="TO">Tocantins - TO</option>
+<option value="RO">Rondônia - RO</option>
+<option value="AC">Acre - AC</option>
+</optgroup>
+<optgroup label="Região Nordeste">
+<option value="MA">Maranhão - MA</option>
+<option value="PI">Piauí - PI</option>
+<option value="CE">Ceará - CE</option>
+<option value="RN">Rio Grande do Norte - RN</option>
+<option value="PE">Pernambuco - PE</option>R
+<option value="PB">Paraíba - PB</option>
+<option value="SE">Sergipe - SE</option>
+<option value="AL">Alagoas - AL</option>
+<option value="BA">Bahia - BA</option>
+</optgroup>
+<optgroup label="Região Centro-Oeste">
+<option value="MT">Mato Grosso - MT</option>
+<option value="MS">Mato Grosso do Sul - MS</option>
+<option value="GO">Goiás - GO</option>
+</optgroup>
+<optgroup label="Região Sudeste">
+<option value="SP" selected>São Paulo - SP</option>
+<option value="RJ">Rio de Janeiro - RJ</option>
+<option value="ES">Espírito Santo - ES</option>
+<option value="MG">Minas Gerais - MG</option>
+</optgroup>
+<optgroup label="Região Sul">
+<option value="PR">Paraná - PR</option>
+<option value="RS">Rio Grande do Sul - RS</option>
+<option value="SC">Santa Catarina - SC</option>
+</optgroup>
+</select></label>
+</fieldset>
+
+<!-- ************************* MSG ******************************** -->
+
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend><br>
+
+<label><span class="legenda">Grau de Urgência:</span>&nbsp;&nbsp;Min <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5"/> Máx</label><br><br>
+
+<label><textarea name="tMsg" id="cMsg" cols="40" rows="8" placeholder="Deixe sua Mensgem"></textarea></label><br>
+
+</fieldset>
+
+<!-- *************************** mais ****************************** -->
+
+<fieldset id="pedido"><legend>Quero Assistir</legend><br>
+
+<label><span class="legenda">Gostaria de adquirir ?&emsp;&emsp;</span><input type="checkbox" name="tPed" id="cPed" checked /></label>
+
+<label><span class="legenda">&emsp;&emsp;Cor:</span><input type="color" name="tCor" id="cCor" value="#0000FF"/></label><br><br>
+
+<label><span class="legenda">Quantd / Total (R$):</span><input type="number" name="tQtd" id="cQtd" value="0" min="0" max="10"/>&emsp;&emsp;
+<input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly/></label><br>
+
+</fieldset>
+
+<br>
+
+<!-- ***************************/*********************************** -->
+
+<button type="submit" name="tEnviar" id="bEnviar" ><span class="botao">ENVIAR</span></button>
+
+<!--
+
+<input type="submit" value="ENVIAR"/>								 // submete e pode executar script
+<input type="reset" name="reset" value="Limpar">				 // para limpar
+<input type="button" onclick="funcao_js();" value="ENVIAR"/> // não submete; usado para scripts
+<input type="image" src="./figuras/botao-enviar.png"/>		 // figuras
+
+<button type="submit">ENVIAR</button>								 // submete e pode executar script
+<button type="reset">ENVIAR</button>				 				 // para limpar
+<button type="button">ENVIAR</button>								 // não submete; usado para scripts
+
+-->
+
+<br><br>
+</form>
+
+
+<br>
+</article>
+
+</section>
+
+<footer>
+<h1>THE BIG BANG THEORY</h1>
+</footer>
+
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

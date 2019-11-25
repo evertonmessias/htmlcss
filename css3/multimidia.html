@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google Glass</title>
+        <!-- codigo rgb em hexa: xxR yyG zzB (+antigo)-->
+        <link rel="stylesheet" href="_css/estilo.css"/>
+        <script src="_javascript/funcoes.js"></script>
+    </head>    
+    <body>
+        <div id="site">
+            <header id="cabecalho">    
+            <hgroup>
+            <h1 class="sitename">Google Glass</h1>
+            <h2 class="sitename">A revolução do Google está chegando</h2>
+            </hgroup>
+            <img id="icone" alt="oculos" title="oculos" src="_imagens/icones/multimidia.png"><br>
+            <nav id="menu" onmouseout="mudaFoto('_imagens/icones/multimidia.png')">
+                <h1>Menu Principal</h1>
+                <ul>
+                <a href="index.html" onmouseover="mudaFoto('_imagens/icones/glass-oculos-preto-peq.png')"><li>Home</li></a>
+                <a href="specs.html" onmouseover="mudaFoto('_imagens/icones/especificacoes.png')"><li>Especificações</li></a>
+                <a href="fotos.html" onmouseover="mudaFoto('_imagens/icones/fotos.png')"><li>Fotos</li></a>
+                <a href="multimidia.html" onmouseover="mudaFoto('_imagens/icones/multimidia.png')"><li>Multimídia</li></a>
+                <a href="fale-conosco.html" onmouseover="mudaFoto('_imagens/icones/contato.png')"><li>Fale Conosco</li></a>
+                </ul>
+            </nav>
+            </header>
+            
+<!-- ----------------------------------------------------------------------- -->
+
+<section id="corpofull"> 
+<article id="multimidia">    
+<div id="breadcrum">Glass &nbsp;&nbsp; > &nbsp;&nbsp;Multimidia</div>
+    
+<h2>Áudio e Vídeo</h2>
+
+<div id="tv-radio">    
+
+<!-- VIDEO NO SERVIDOR :
+<video id="filme" controls="controls" poster="_imagens/video-mini03.jpg">
+    <source src="_media/getting-started.mp4" type="video/mp4"/> 
+    Erro no vídeo !!
+</video>
+-->
+
+<iframe id="filme" width="450" height="253" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0" allowfullscreen></iframe>
+
+    
+<audio id="musica" controls="controls">
+    <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
+    Erro no audio !!
+</audio>
+
+</div>
+</article>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+            
+<footer id="rodape"><h3>Copyright &copy; 2017 - by Everton M.</h3></footer>        
+</div></body>
+</html>

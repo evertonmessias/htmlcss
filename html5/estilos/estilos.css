@@ -1,0 +1,276 @@
+@font-face {
+		font-family: 'FonteEverton';
+		src: url("../fonte/fontelogo.ttf");
+		}
+
+/*@import url('https://fonts.googleapis.com/css?family=Spicy+Rice'); */
+
+body{
+	background-color: #ccc;
+	font-family: Arial;
+}
+
+#pagina{
+	background-color: #fff;
+	display: block;position: relative;
+	width: 800px;height: 100%;
+	margin: 0 auto;	
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px #000;
+}
+
+header{
+	background-color: #eee;
+	position: relative;display: block;
+	margin: 0 auto;top: 15px;
+	width: 760px;height: 100px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px; 
+}
+
+h1{font-weight: bold;font-size: 20px;
+font-family: 'FonteEverton';background-color: #eee;
+display: block;position: relative;padding:5px;
+margin: 0 auto;width: 90%;text-align: center;
+vertical-align:middle;}
+
+figure{margin:0;position:relative;display:block;float: left;height: 100%;}
+
+img{height: 90px;}
+
+
+/*  ************  NAV  *************  */
+
+
+nav{display: block;position: relative;float: right;left: -10px;
+	width: 270px;height: 25px;top: 10px;z-index: 999;}
+
+.menu{margin:0;height:100%;}
+
+.menu li{list-style:none;float: left;margin-left: 15px;width: 60px;}
+
+.menu a{display:block;width:100%;height:100%;color: #fff;
+text-decoration: none;font-size: 15px;background-color: #CD2626;
+padding: 4px;border-radius: 5px;text-align: center;
+transition: background-color 1s;
+}
+
+.menu a:hover{background-color: #fff;color: #CD2626;}
+
+.menu li ul{position:relative;margin-left:-54px;width: 80px;
+display:none;transition: display 1s;}
+
+.menu li:hover ul{display:block;}
+
+.menu li ul li{margin-top: 2px;}
+
+section{
+	background-color: #fff;
+	position: relative;display: block;
+	margin: 0 auto;top: 30px;
+	width: 95%;height: 460px;
+	border-radius: 10px;
+}
+
+section#form{height: 1520px;}
+
+aside{
+	display: block;position: relative;
+	background-color: #fff;width: 228px;float: left;
+	height: 400px;
+}
+
+/*  ************  Frame  *************  */
+
+aside iframe{
+    width: 100%;
+    height: 50%;
+    border: none;
+    overflow: hidden;}
+
+#janela{background-color: #eee;
+	display: block;position: relative;left: 28px;width: 100px;}
+
+#janela h3 {text-align: center;width: 100px;}
+
+#janela img{width: 100px;height: 100px;}
+
+#janela img.logo2{margin-left: -52px;width: 205px;height: 178px;}
+
+article{
+	display: block;position: relative;
+	background-color: #fff;width: 70%;float: right;
+	height: 100%;	
+}
+
+/*  ************  Tabela  *************  */
+
+#tabela{width:200px;display: block;border-spacing: 0px;
+position:relative; margin: 0 auto;left: -25px;}
+
+#tabela caption {border: 1px solid black;background-color: #eee;}
+
+#tabela td {border: 1px solid black;padding: 10px;
+width: 100px;vertical-align:top; }
+
+#tabela td.ce{text-align: right;background-color: #ccc;color: #fff;}
+
+#tabela td.cd{text-align: left;background-color: #fff;color: #ccc;} 
+
+
+
+/*  ************  MAPA  *************  */
+
+.divisor{width: 90%;}
+
+#figura{margin-left: 15px;}
+
+#fotoSerie {
+display: block; 
+position: absolute; 
+top: 0; left: 0; 
+width: 500px; height: 220px; 
+}
+
+#transparencia {
+width: 500px; height: 220px; 
+position: absolute;
+top: 0; left: 0; 
+}
+
+#figura::before{
+display: block; 
+content: ""; 
+position: absolute; 
+top: 0; left: 0; 
+background-image: url(../figuras/elenco.jpg);
+ background-size: cover;  
+opacity: .3;
+width: 500px; height: 220px; 
+}
+
+
+#figura area:nth-of-type(1):hover ~ #fotoSerie{clip-path: url(#bern);}
+#figura area:nth-of-type(2):hover ~ #fotoSerie{clip-path: url(#wolotz);}
+#figura area:nth-of-type(3):hover ~ #fotoSerie{clip-path: url(#emi);}
+#figura area:nth-of-type(4):hover ~ #fotoSerie{clip-path: url(#sheldon);}
+#figura area:nth-of-type(5):hover ~ #fotoSerie{clip-path: url(#leonard);}
+#figura area:nth-of-type(6):hover ~ #fotoSerie{clip-path: url(#penny);}
+#figura area:nth-of-type(7):hover ~ #fotoSerie{clip-path: url(#haj);}
+
+
+h4.mapa{text-align: center;margin-bottom: -1px;margin-top: 70px;}
+
+/*  ************  ALBUM  *************  */
+
+ul#album{
+    width:700px;
+    margin-left: -10px;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;}
+
+ul#album li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid silver;
+    background-color: white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .8);
+    transition: all .2s ease-in;}
+
+ul#album li:hover{
+    transform: scale(1.5);}
+
+ul#album li#foto01{
+    background: url('../figuras/galeria-01.jpg') no-repeat;}
+ul#album li#foto02{
+    background: url('../figuras/galeria-02.jpg') no-repeat;}
+
+ul#album li#foto01, 
+ul#album li#foto02{
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #fff;}
+
+ul#album li#foto01:hover, 
+ul#album li#foto02:hover{
+    background-position: 0% 0%;
+    background-size: 200px 200px;}
+
+ul#album li a{
+    margin: 0px auto;
+    opacity: 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    background-color: rgba(0,0,0,.3);
+    font-size: 18px;
+    line-height: 320px;
+    padding: 5px;}
+
+ul#album li:hover a{opacity: 1;}
+ul#album li a:hover{color: red;}
+
+
+
+/*  ************  Audio Vídeo  *************  */
+
+
+audio, iframe.video{display: block;position: relative;margin: 0 auto;}
+
+
+/*  ************  Formulario / Fieldset  *************  */
+
+
+form{width: 100%;margin: 0px auto;}
+
+fieldset#usuario, fieldset#endereco, fieldset#mensagem, fieldset#pedido{display:block;position:relative;width: 87%;margin-left: 20px;}
+
+fieldset#social{display:block;position:relative;margin-left: 20px;width: 325px;height:100px;float: left;}
+
+fieldset#sexo{display:block;position:relative;width: 105px;height:100px;float: right;margin-right: 20px;}
+
+legend, label span.legenda{color: #888;font-weight: bold;font-size: 20px;}
+
+
+/*  ************  INPUTS *************  */
+#pedido input[type="number"]{display:block;position:relative;width: 70px;margin:0 auto;left: 30px;top: -25px;background-color: rgba(255,255,255,.7);font-size: 18px;color: #666;}
+#pedido input[type="text"]{display:block;position:relative;width: 120px;float: right;top: -52px;margin-right: 15px;background-color: rgba(255,255,255,.7);font-size: 18px;color: #666;}
+
+#usuario input, #social input[type="url"],#endereco input {display:block;position:relative;margin-left:80px;top:-25px;font-size: 18px;background-color: rgba(255,255,255,.7);width: 80%;color: #666;}#social input[type="url"] {margin-left:55px;}
+#usuario input:hover, #social input[type="url"]:hover, #endereco input:hover, #mensagem textarea:hover, #pedido input:hover {background-color: #ddd;}
+
+#social input[type="file"]{display:block;position:relative;float:right; width:265px; background-color: #eee;left: -5px;}
+#social input[type="file"]:hover{background-color: #ccc;}
+
+#sexo input{display:block;position:relative;float: right;margin-right: 20px;top: 5px;}
+
+#endereco input[type="number"]{display:block;position:relative;width: 70px;left: 70px;}
+
+#endereco #cComp{display:block;position:relative;width: 200px;float: right;margin-right: 10px;top: -52px;} 
+
+#mensagem textarea{background-color: rgba(255,255,255,.7);font-size: 18px;color: #666;}
+
+#bEnviar {position: relative;display: block;top: 15px;float: right;width: 100px;height: 40px;border-radius: 10px;margin-right: 40px;}
+span.botao{position: absolute;display: block;margin: 0 auto;
+background-color: #CD2626;width: 120%;height: 90%;top:-3px;left: -8px;border-radius: 5px;
+text-align: center;padding-top: 10px;font-weight: bold;color: #fff;font-size: 18px;}
+span.botao:hover{transform: scale(1.1);background-color: #eee;color: #CD2626;transition:background-color 1s;}
+
+/*  ************  Rodape  *************  */
+
+footer{
+	background-color: #eee;
+	position: relative;display: block;
+	margin: 0 auto;top: -10px;
+	width: 95%;height: 35px;
+	padding-top: 10px;	
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px; 
+}
+
+
+
+
+
